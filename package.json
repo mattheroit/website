@@ -1,4 +1,14 @@
 {
+  "devDependencies": {
+    "vite-imagetools": "latest",
+    "vitepress": "latest",
+    "vue": "latest"
+  },
+  "dependencies": {
+    "esbuild": "latest",
+    "markdown-it": "latest",
+    "markdown-it-shortcode-tag": "latest"
+  },
   "scripts": {
     "docs:dev": "npx vitepress dev",
     "docs:build": "npx vitepress build",
