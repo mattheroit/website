@@ -20,9 +20,24 @@ export default defineConfig({
 		siteTitle: "site title",
 
 		// https://vitepress.dev/reference/default-theme-config
-		nav: [{ text: "Home", link: "/" }],
+		// nav: [{ text: "Home", link: "/" }],
 
-		sidebar: [{}],
+		sidebar: {
+			"/CJL/zapisky/": [
+				{ items: [{ text: "Obsah", link: "./" }] },
+				{
+					text: "Zapisky",
+					items: [{}],
+				},
+			],
+			"/CJL/rozbory/": [
+				{ items: [{ text: "Obsah", link: "./" }] },
+				{
+					text: "Rozbory",
+					items: [{}],
+				},
+			],
+		},
 
 		socialLinks: [{ icon: "github", link: "https://github.com/mattheroit/hlavni-otevirac-oken" }],
 		search: { provider: "local" },

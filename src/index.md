@@ -15,9 +15,10 @@ hero:
   #    link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: Český jazyk a literatura
+    details: "- Zápisky<br>- Rozbory"
+    link: /CJL/
+  #- title: Feature B
+  #  details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  #- title: Feature C
 ---
