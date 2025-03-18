@@ -46,5 +46,10 @@ export default defineConfig({
 			message: "<a href=''>TODO</a>",
 			copyright: `Copyright © 2025 mattheroit`,
 		},
+
+		editLink: {
+			pattern: "https://github.com/mattheroit/hlavni-otevirac-oken/edit/main/src/:path",
+			text: "Upravit na GitHubu",
+		},
 	},
 });
