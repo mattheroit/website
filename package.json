@@ -1,11 +1,13 @@
 {
   "devDependencies": {
+    "fs": "^0.0.1-security",
     "vite-imagetools": "latest",
     "vitepress": "latest",
     "vue": "latest"
   },
   "dependencies": {
     "esbuild": "latest",
+    "gray-matter": "^4.0.3",
     "markdown-it": "latest",
     "markdown-it-shortcode-tag": "latest"
   },
