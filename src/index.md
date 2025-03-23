@@ -22,3 +22,11 @@ features:
   #  details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   #- title: Feature C
 ---
+
+<script setup lang="ts">
+import { onMounted } from 'vue';
+
+onMounted(() => {
+    window.location.replace(`/CJL/`);
+});
+</script>
