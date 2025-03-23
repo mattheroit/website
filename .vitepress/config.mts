@@ -43,9 +43,7 @@ export default defineConfig({
 		socialLinks: [{ icon: "github", link: "https://github.com/mattheroit/hlavni-otevirac-oken" }],
 		search: { provider: "local" },
 
-		footer: {
-			message: "<a href=''>TODO</a>",
-		},
+		// footer: { message: "<a href=''>TODO</a>" },
 
 		editLink: {
 			pattern: "https://github.com/mattheroit/hlavni-otevirac-oken/edit/main/src/:path",
