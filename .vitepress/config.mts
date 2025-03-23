@@ -44,7 +44,6 @@ export default defineConfig({
 
 		footer: {
 			message: "<a href=''>TODO</a>",
-			copyright: `Copyright © 2025 mattheroit`,
 		},
 
 		editLink: {
