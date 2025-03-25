@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  text: CJL
+  text: Český jazyk a literatura
 
 features:
   - title: Zápisky
