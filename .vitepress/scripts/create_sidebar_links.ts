@@ -18,6 +18,8 @@ function filterFileNames(fileNames: fs.Dirent[]): fs.Dirent[] {
 		.filter((entry: fs.Dirent) => entry.name !== "index.md");
 }
 
+const FOLDER_TITLE_FILE: string = "_title.md";
+
 // Recursive function to read folders and files
 function getSidebarItems(dataDir: string, baseDir: string): any[] {
 	return filterFileNames(getFileNames(dataDir, true)).map((entry: fs.Dirent) => {
@@ -32,17 +34,32 @@ function getSidebarItems(dataDir: string, baseDir: string): any[] {
 
 			// Check if this folder has an index.md
 			const indexPath = path.join(fullPath, "index.md");
+			const titlePath = path.join(fullPath, FOLDER_TITLE_FILE);
 			if (fs.existsSync(indexPath)) {
 				text = extractFirstHeading(readFile(indexPath).content);
 				link = `${newBaseDir}/`;
+			} else if (fs.existsSync(titlePath)) {
+				text = extractFirstHeading(readFile(titlePath).content);
 			}
 		} else {
 			text = extractFirstHeading(readFile(fullPath).content);
 			link = newBaseDir;
 		}
 
+		if (text === null) {
+			throw new Error(
+				`
+				Folder doesn't have a top level heading.
+				Add a "${FOLDER_TITLE_FILE}" or "index.md" file
+				Location: ${newBaseDir}
+				`
+			);
+		}
+
+		if (entry.name.endsWith("_title.md")) return;
+
 		return {
-			text: text || entry.name,
+			text: text,
 			...(link ? { link: link } : {}),
 			...(subfolderItems.length > 0 ? { collapsed: false, items: subfolderItems } : {}),
 		};
