@@ -5,7 +5,6 @@ import matter, { GrayMatterFile } from "gray-matter";
 const getDataDir = (baseDir: string): string => path.resolve(__dirname, `../../src${baseDir}`);
 const getFileNames = (dataDir: string, WFT: boolean = false): fs.Dirent => fs.readdirSync(dataDir, { withFileTypes: WFT });
 const readFile = (path: string): GrayMatterFile<any> => matter(fs.readFileSync(path, "utf-8"));
-const filterRozbory = (fileNames: string[]): string[] => fileNames.filter((f: string) => /^[1-9]/.test(f));
 
 function extractFirstHeading(content: string): string {
 	const match = content.match(/^#\s+(.+)/m);
@@ -13,7 +12,7 @@ function extractFirstHeading(content: string): string {
 }
 
 // Filters out everything that isn't a directory or md files (exept for index.md)
-function filterFileNames(fileNames: fs.Dirent[]) {
+function filterFileNames(fileNames: fs.Dirent[]): fs.Dirent[] {
 	return fileNames
 		.filter((entry: fs.Dirent) => entry.isDirectory() || entry.name.endsWith(".md"))
 		.filter((entry: fs.Dirent) => entry.name !== "index.md");
@@ -52,13 +51,7 @@ function getSidebarItems(dataDir: string, baseDir: string): any[] {
 
 export function CJLrozbory() {
 	const baseDir: string = "/CJL/rozbory";
-	const dataDir: string = getDataDir(baseDir);
-	return filterRozbory(getFileNames(dataDir)).map((filename: string) => {
-		return {
-			text: extractFirstHeading(readFile(path.join(dataDir, filename)).content),
-			link: `${baseDir}/${filename}`,
-		};
-	});
+	return getSidebarItems(getDataDir(baseDir), baseDir);
 }
 
 export function CJLzapisky() {
