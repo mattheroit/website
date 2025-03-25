@@ -25,14 +25,14 @@ export default defineConfig({
 
 		sidebar: {
 			"/CJL/zapisky/": [
-				{ items: [{ text: "Obsah", link: "./" }] },
+				{ items: [{ text: "Obsah", link: "/CJL/zapisky/" }] },
 				{
 					text: "Zapisky",
 					items: CJLzapisky(),
 				},
 			],
 			"/CJL/rozbory/": [
-				{ items: [{ text: "Obsah", link: "./" }] },
+				{ items: [{ text: "Obsah", link: "/CJL/rozbory/" }] },
 				{
 					text: "Rozbory",
 					items: CJLrozbory(),

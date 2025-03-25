@@ -1,14 +1,11 @@
 import fs from "fs";
 import path from "path";
-import matter from "gray-matter";
+import matter, { GrayMatterFile } from "gray-matter";
 
-function getFileNames(dataDir: string, recursive: boolean = false): string[] {
-	return fs.readdirSync(dataDir, { recursive: recursive });
-}
-
-function filterRozbory(fileNames: string[]) {
-	return fileNames.filter((f: string) => /^[1-9]/.test(f));
-}
+const getDataDir = (baseDir: string): string => path.resolve(__dirname, `../../src${baseDir}`);
+const getFileNames = (dataDir: string, WFT: boolean = false): fs.Dirent => fs.readdirSync(dataDir, { withFileTypes: WFT });
+const readFile = (path: string): GrayMatterFile<any> => matter(fs.readFileSync(path, "utf-8"));
+const filterRozbory = (fileNames: string[]): string[] => fileNames.filter((f: string) => /^[1-9]/.test(f));
 
 function extractFirstHeading(content: string): string {
 	const match = content.match(/^#\s+(.+)/m);
@@ -54,12 +51,12 @@ function getSidebarItems(dataDir: string, baseDir: string): any[] {
 }
 
 export function CJLrozbory() {
-	const dataDir: string = path.resolve(__dirname, "../../src/CJL/rozbory");
+	const baseDir: string = "/CJL/rozbory";
+	const dataDir: string = getDataDir(baseDir);
 	return filterRozbory(getFileNames(dataDir)).map((filename: string) => {
-		const { data: metadata, content } = matter(fs.readFileSync(path.join(dataDir, filename), "utf-8"));
 		return {
-			text: extractFirstHeading(content),
-			link: `./${filename}`,
+			text: extractFirstHeading(readFile(path.join(dataDir, filename)).content),
+			link: `${baseDir}/${filename}`,
 		};
 	});
 }
