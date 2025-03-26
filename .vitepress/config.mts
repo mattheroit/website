@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import { CJLzapisky, CJLrozbory } from "./scripts/create_sidebar_links";
+import { createSidebarLinks } from "./scripts/create_sidebar_links";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -28,14 +28,14 @@ export default defineConfig({
 				//{ items: [{ text: "Obsah", link: "/CJL/zapisky/" }] },
 				{
 					text: "Zapisky",
-					items: CJLzapisky(),
+					items: createSidebarLinks("/CJL/zapisky/"),
 				},
 			],
 			"/CJL/rozbory/": [
 				//{ items: [{ text: "Obsah", link: "/CJL/rozbory/" }] },
 				{
 					text: "Rozbory",
-					items: CJLrozbory(),
+					items: createSidebarLinks("/CJL/rozbory/"),
 				},
 			],
 		},

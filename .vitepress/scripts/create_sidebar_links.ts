@@ -66,12 +66,7 @@ function getSidebarItems(dataDir: string, baseDir: string): any[] {
 	});
 }
 
-export function CJLrozbory() {
-	const baseDir: string = "/CJL/rozbory";
-	return getSidebarItems(getDataDir(baseDir), baseDir);
-}
-
-export function CJLzapisky() {
-	const baseDir: string = "/CJL/zapisky";
-	return getSidebarItems(getDataDir(baseDir), baseDir);
+export function createSidebarLinks(path: string) {
+	if (path.endsWith("/")) path = path.substring(0, path.length - 1);
+	return getSidebarItems(getDataDir(path), path);
 }
