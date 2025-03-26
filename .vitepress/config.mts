@@ -26,17 +26,11 @@ export default defineConfig({
 		sidebar: {
 			"/CJL/zapisky/": [
 				//{ items: [{ text: "Obsah", link: "/CJL/zapisky/" }] },
-				{
-					text: "Zapisky",
-					items: createSidebarLinks("/CJL/zapisky/"),
-				},
+				{ text: "Zapisky", items: createSidebarLinks("/CJL/zapisky/") },
 			],
 			"/CJL/rozbory/": [
 				//{ items: [{ text: "Obsah", link: "/CJL/rozbory/" }] },
-				{
-					text: "Rozbory",
-					items: createSidebarLinks("/CJL/rozbory/"),
-				},
+				{ text: "Rozbory", items: createSidebarLinks("/CJL/rozbory/") },
 			],
 		},
 
