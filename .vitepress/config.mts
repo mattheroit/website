@@ -22,7 +22,7 @@ export default defineConfig({
 		siteTitle: "HOO",
 
 		// https://vitepress.dev/reference/default-theme-config
-		// nav: [{ text: "Home", link: "/" }],
+		// nav: [],
 
 		sidebar: {
 			"/CJL/zapisky/": [
@@ -35,14 +35,29 @@ export default defineConfig({
 			],
 		},
 
+		aside: true,
+		outline: { level: [2, 3], label: "Na této stránce" },
 		socialLinks: [{ icon: "github", link: "https://github.com/mattheroit/hlavni-otevirac-oken" }],
-		search: { provider: "local" },
-
-		// footer: { message: "<a href=''>TODO</a>" },
-
+		// footer: {},
 		editLink: {
 			pattern: "https://github.com/mattheroit/hlavni-otevirac-oken/edit/main/src/:path",
 			text: "Upravit na GitHubu",
 		},
+		lastUpdated: {
+			text: "Naposledy upraveno",
+			formatOptions: {
+				forceLocale: true,
+				dateStyle: "short",
+				timeStyle: "short",
+			},
+		},
+		search: { provider: "local" },
+		docFooter: { prev: "Předchozí", next: "Další" },
+		darkModeSwitchLabel: "Vzhled",
+		darkModeSwitchTitle: "Přepnout na tmavý režim",
+		lightModeSwitchTitle: "Přepnout na světlý režim",
+		returnToTopLabel: "Vrátit na začátek",
+		langMenuLabel: "Jazyk",
+		skipToContentLabel: "Přeskočit k obsahu",
 	},
 });
