@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="logo_light.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1">Logo - hlavni-otevirac-oken.cz</title>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="0.87396187"
+     inkscape:cx="485.14702"
+     inkscape:cy="200.80968"
+     inkscape:window-width="1745"
+     inkscape:window-height="910"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:lockguides="false" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect10"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g31"
+       inkscape:label="rim"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+      <path
+         d="M 505.03906,2.0644531 9.90625,4.4277344 39.203125,34.359375 471.83398,31.996094 Z"
+         style="display:inline;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;fill:#ffffff;fill-opacity:1;stroke-opacity:1"
+         id="path31" />
+      <path
+         d="m 505.03906,2.0644531 -33.20508,29.9316409 12.69727,366.267576 25.39062,24.41797 z"
+         style="display:inline;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;fill:#ffffff;fill-opacity:1;stroke-opacity:1"
+         id="path30" />
+      <path
+         d="M 484.53125,398.26367 29.4375,404.56641 2.09375,427.4082 509.92187,422.68164 Z"
+         style="display:inline;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;fill:#ffffff;fill-opacity:1;stroke-opacity:1"
+         id="path29" />
+      <path
+         d="M 2.09375,427.4082 29.4375,404.56641 39.203125,34.359375 9.90625,4.4277344 Z"
+         style="display:inline;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;fill:#ffffff;fill-opacity:1;stroke-opacity:1"
+         id="path28" />
+    </g>
+    <g
+       id="g27"
+       inkscape:label="window"
+       style="fill:#999999;fill-opacity:1;stroke:#000000;stroke-opacity:1">
+      <path
+         d="M 39.203125,34.359375 29.4375,404.56641 50.921875,387.23633 62.642578,65.865234 Z"
+         style="fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;fill:#999999;stroke-opacity:1"
+         id="path27" />
+      <path
+         d="M 431.79492,509.32617 392.73047,467.58008 50.921875,387.23633 29.4375,404.56641 Z"
+         style="fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;fill:#999999;stroke-opacity:1"
+         id="path26" />
+      <path
+         d="m 378.08203,124.1543 14.64844,343.42578 39.06445,41.74609 -9.76562,-419.042967 z"
+         style="fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;fill:#999999;stroke-opacity:1"
+         id="path25" />
+      <path
+         d="m 187.28906,88.898437 -2.42969,145.857423 -127.468745,-24.89063 -1.314453,36.03125 128.003908,23.20313 -0.49414,149.32031 33.2539,7.81641 V 276.11914 l 169.32032,37.4043 -1.52735,-35.78125 -167.79297,-36.56836 3.52149,-146.164064 z"
+         style="fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;fill:#999999;stroke-opacity:1"
+         id="path24" />
+      <path
+         d="M 39.203125,34.359375 62.642578,65.865234 378.08203,124.1543 422.0293,90.283203 Z"
+         style="fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;fill:#999999;stroke-opacity:1"
+         id="path23" />
+    </g>
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Matěj Verhaegen</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nd/4.0/" />
+        <dc:title>Logo - hlavni-otevirac-oken.cz</dc:title>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nd/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

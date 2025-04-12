@@ -11,13 +11,14 @@ export default defineConfig({
 	title: "HOO",
 	//description: "description",
 	head: [
-		["link", { rel: "icon", href: "/logo_black.svg", type: "image/svg+xml" }],
+		["link", { rel: "icon", href: "/logo_dark.svg", id: "favicon" }],
+		["script", { src: "/scripts/favicon_switcher.js" }],
 		["meta", { property: "og:site_name", content: "Hlavní otevírač oken" }],
 		["meta", { property: "og:locale", content: "cs-CZ" }],
 	],
 
 	themeConfig: {
-		logo: { light: "/logo_black.svg", dark: "/logo_white.svg" },
+		logo: { light: "/logo_dark.svg", dark: "/logo_light.svg" },
 		siteTitle: "HOO",
 
 		// https://vitepress.dev/reference/default-theme-config
