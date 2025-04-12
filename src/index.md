@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: name
-  text: text
-  tagline: tagline
+  name: " "
+  #text: text
+  #tagline: tagline
 
 features:
   - title: Český jazyk a literatura
