@@ -133,14 +133,14 @@ sudo make samples
    Na konec souboru můžeme skočit pomocí zkratky `ctrl + /`. Číslo řádku bude `-1`
    :::
 
-   ::: code-group
+   :::code-group
 
    ```ini [sip.conf]
    ;TEMPLATE
    ;------------------------------------------------------------------------------------------
    ;[tel1]                 ; ID uzivatele
    ;secret=Tel123          ; heslo
-   ;context=locals         ; kontext, vaze uzivatele k dialplanu vytvorenem v extentions.conf
+   ;context=locals         ; kontext, vaze uzivatele k dialplanu vytvorenem v extensions.conf
    ;type=friend
    ;host=dynamic
 
