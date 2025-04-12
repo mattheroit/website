@@ -8,17 +8,17 @@ export default defineConfig({
 	srcDir: "src",
 	lang: "cs-CZ",
 
-	title: "title",
-	description: "description",
+	title: "HOO",
+	//description: "description",
 	head: [
 		["link", { rel: "icon", href: "/logo_black.svg", type: "image/svg+xml" }],
-		["meta", { property: "og:site_name", content: "site name" }],
+		["meta", { property: "og:site_name", content: "Hlavní otevírač oken" }],
 		["meta", { property: "og:locale", content: "cs-CZ" }],
 	],
 
 	themeConfig: {
 		logo: { light: "/logo_black.svg", dark: "/logo_white.svg" },
-		siteTitle: "site title",
+		siteTitle: "HOO",
 
 		// https://vitepress.dev/reference/default-theme-config
 		// nav: [{ text: "Home", link: "/" }],
