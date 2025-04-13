@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "fs": "^0.0.1-security",
+    "prettier": "3.5.3",
     "vite-imagetools": "latest",
     "vitepress": "latest",
     "vue": "latest"
