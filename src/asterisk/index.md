@@ -12,7 +12,7 @@
    ```
 
 3. **Nastavení statické IP adresy**  
-   Postupujte dle [návodu zde](https://raspberrytips.com/set-static-ip-address-raspberry-pi/#set-a-static-ip-via-the-command-line).
+   Postupujte dle [návodu zde][rpi-static-ip].
 
 4. **Aktualizace operačního systému**
 
@@ -45,7 +45,7 @@
 
 ### Konfigurace Asterisku
 
-:link: [Oficiální dokumentace - Prerequisites](https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Prerequisites/Checking-Asterisk-Requirements/)
+:link: [Oficiální dokumentace - Prerequisites][prerequisites]
 
 1. **Přejděte do složky:**
 
@@ -102,7 +102,7 @@
 
 ### Kompilace a instalace
 
-:link: [Oficiální dokumentace - Build & Install](https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/)
+:link: [Oficiální dokumentace - Build & Install][build-install]
 
 ```sh
 make
@@ -111,7 +111,7 @@ sudo make install
 
 ## Inicializační skripty
 
-:link: [Oficiální dokumentace - Init Scripts](https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Installing-Initialization-Scripts/)
+:link: [Oficiální dokumentace - Init Scripts][init-scripts]
 
 ```sh
 sudo make config
@@ -258,3 +258,10 @@ Přihlašte se do webového rozhraní IP telefonu -> Admin login (vpravo nahoře
 | Proxy IP | adresa Asterisk serveru                  |
 | User ID  | Identifikátor ze sip.conf (ID uzivatele) |
 | Password | Heslo ze sip.conf (heslo uzivatele)      |
+
+<!-- Links -->
+
+[rpi-static-ip]: (https://raspberrytips.com/set-static-ip-address-raspberry-pi/#set-a-static-ip-via-the-command-line)
+[prerequisites]: (https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Prerequisites/Checking-Asterisk-Requirements/)
+[build-install]: (https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/)
+[init-scripts]: (https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Installing-Initialization-Scripts/)
