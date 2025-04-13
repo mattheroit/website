@@ -7,7 +7,9 @@ hero:
 
 features:
   - title: Zápisky
+    details: "- Literatura v letech 1968 - 1989"
     link: /CJL/zapisky/
   - title: Rozbory
-    link: /CJL/rozbory/
+    details: Work in progress
+    # link: /CJL/rozbory/
 ---
