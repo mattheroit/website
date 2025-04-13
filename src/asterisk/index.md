@@ -261,7 +261,7 @@ Přihlašte se do webového rozhraní IP telefonu -> Admin login (vpravo nahoře
 
 <!-- Links -->
 
-[rpi-static-ip]: (https://raspberrytips.com/set-static-ip-address-raspberry-pi/#set-a-static-ip-via-the-command-line)
-[prerequisites]: (https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Prerequisites/Checking-Asterisk-Requirements/)
-[build-install]: (https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/)
-[init-scripts]: (https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Installing-Initialization-Scripts/)
+[rpi-static-ip]: https://raspberrytips.com/set-static-ip-address-raspberry-pi/#set-a-static-ip-via-the-command-line
+[prerequisites]: https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Prerequisites/Checking-Asterisk-Requirements/
+[build-install]: https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Building-and-Installing-Asterisk/
+[init-scripts]: https://docs.asterisk.org/Getting-Started/Installing-Asterisk/Installing-Asterisk-From-Source/Installing-Initialization-Scripts/
