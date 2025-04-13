@@ -10,6 +10,6 @@ features:
     details: "- Literatura v letech 1968 - 1989"
     link: /CJL/zapisky/
   - title: Rozbory
-    details: Work in progress
+    details: "! Work in progress !<br> Přispějte na github.com!"
     # link: /CJL/rozbory/
 ---
