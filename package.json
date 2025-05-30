@@ -1,6 +1,5 @@
 {
   "devDependencies": {
-    "fs": "^0.0.1-security",
     "prettier": "3.5.3",
     "vite-imagetools": "latest",
     "vitepress": "latest",
@@ -8,7 +7,6 @@
   },
   "dependencies": {
     "esbuild": "latest",
-    "gray-matter": "^4.0.3",
     "markdown-it": "latest",
     "markdown-it-shortcode-tag": "latest"
   },

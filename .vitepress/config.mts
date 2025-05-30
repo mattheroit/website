@@ -1,5 +1,4 @@
 import { defineConfig } from "vitepress"
-import { createSidebarLinks } from "./scripts/create_sidebar_links"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
