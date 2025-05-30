@@ -44,7 +44,36 @@ export default defineConfig({
         timeStyle: "short"
       }
     },
-    search: { provider: "local" },
+    search: {
+      provider: "local",
+      options: {
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: "Hledat",
+                buttonAriaLabel: "Hledat"
+              },
+              modal: {
+                displayDetails: "Detailní seznam",
+                resetButtonTitle: "Resetovat pole",
+                backButtonTitle: "Zavřít",
+                noResultsText: "Žádný výsledek pro",
+                footer: {
+                  selectText: "Vybrat",
+                  selectKeyAriaLabel: "Enter",
+                  navigateText: "Navigovat",
+                  navigateUpKeyAriaLabel: "Šipka nahoru",
+                  navigateDownKeyAriaLabel: "Šipka dolu",
+                  closeText: "Zavřít",
+                  closeKeyAriaLabel: "Escape"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     docFooter: { prev: "Předchozí", next: "Další" },
     darkModeSwitchLabel: "Vzhled",
     darkModeSwitchTitle: "Přepnout na tmavý režim",
