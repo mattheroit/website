@@ -130,7 +130,7 @@ sudo make samples
 2. **Úprava `sip.conf` a `extensions.conf`**
 
    :::tip
-   Na konec souboru můžeme skočit pomocí zkratky `ctrl + /`. Číslo řádku bude `-1`
+   Pokud používate `nano` na úpravu souborů. Můžete na konec souboru skočit pomocí zkratky `ctrl + /`. Číslo řádku bude `-1`
    :::
 
    :::code-group
@@ -150,8 +150,8 @@ sudo make samples
    type=friend
    host=dynamic
 
-   [andela]
-   secret=Andela123
+   [helena]
+   secret=Helena123
    context=locals
    type=friend
    host=dynamic
@@ -161,7 +161,7 @@ sudo make samples
    ```ini [extensions.conf]
    [locals]                        ; kontext, vaze dialplan k uzivatelum v sip.conf
    exten => 123,1,dial(SIP/jarmil) ; zavolame jarmilovi, kdyz nekdo vytoci '123'
-   exten => 321,1,dial(SIP/andela)
+   exten => 321,1,dial(SIP/helena)
 
    ```
 
@@ -217,7 +217,7 @@ Očekávaný výstup:
 *CLI> sip show users
 Username                   Secret           Accountcode      Def.Context      ACL  Forcerport
 jarmil                     Jarmil123                         locals           No   No
-andela                     Andela123                         locals           No   No
+helena                     helena123                         locals           No   No
 
 ```
 
@@ -241,7 +241,7 @@ Očekávaný výstup:
 *CLI> dialplan show locals
 [ Context 'locals' created by 'pbx_config' ]
   '123' =>          1. dial(SIP/jarmil)                           [extensions.conf:916]
-  '321' =>          1. dial(SIP/andela)                           [extensions.conf:917]
+  '321' =>          1. dial(SIP/helena)                           [extensions.conf:917]
 
 -= 2 extensions (2 priorities) in 1 context. =-
 
