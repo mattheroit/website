@@ -8,7 +8,7 @@ hero:
   #tagline: tagline
 
 features:
-  - title: Český jazyk a literatura
-    details: "- Zápisky<br>- Rozbory"
-    link: /CJL/
+  - title: Asterisk
+    details: "Basic setup"
+    link: /asterisk/
 ---
