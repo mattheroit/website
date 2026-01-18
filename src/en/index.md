@@ -11,7 +11,7 @@ features:
   - title: Asterisk
     details: "- Basic setup"
     link: ./asterisk/instalation_and_configuration
-  #- title: Acoustic levitator mk1
-  #  details: "- How it works <br>- How to build"
-  #  link: ./projects/acoustic_levitator_mk1
+  - title: Acoustic levitator mk1
+    details: "- How it works <br>- How to build"
+    link: ./projects/acoustic_levitator_mk1
 ---

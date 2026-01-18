@@ -11,7 +11,7 @@ features:
   - title: Asterisk
     details: "- Základní nastavení"
     link: ./asterisk/instalation_and_configuration
-  # - title: Akustický levitátor mk1
-  #   details: "- Jako to funguje <br>- Návod na postavení"
-  #   link: ./projects/acoustic_levitator_mk1
+  - title: Akustický levitátor mk1
+    details: "- Jako to funguje <br>- Návod na postavení"
+    link: ./projects/acoustic_levitator_mk1
 ---
