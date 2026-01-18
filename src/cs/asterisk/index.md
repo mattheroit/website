@@ -100,7 +100,7 @@
    ~/asterisk-18.26.1 $
    ```
 
-### Kompilace a instalace
+### Kompilace a Instalace
 
 :link: [Oficiální dokumentace - Build & Install][build-install]
 
@@ -130,7 +130,7 @@ sudo make samples
 2. **Úprava `sip.conf` a `extensions.conf`**
 
    :::tip
-   Pokud používate `nano` na úpravu souborů. Můžete na konec souboru skočit pomocí zkratky `ctrl + /`. Číslo řádku bude `-1`
+   Pokud používate `nano` na úpravu souborů. Můžete na konec souboru skočit pomocí zkratky `ctrl + /`. Číslo řádku bude `-1`.
    :::
 
    :::code-group
@@ -185,7 +185,7 @@ sudo make samples
 
    ```
 
-### Ověření
+## Ověření
 
 ### Spuštění Asterisku
 
@@ -251,7 +251,7 @@ Očekávaný výstup:
 
 IP adresa telefonu se získá z menu (tlačítko :page_facing_up:) -> Network. Lze použít i zkratku menu -> 9.
 
-Přihlašte se do webového rozhraní IP telefonu -> Admin login (vpravo nahoře) -> Ext1 a vyplnit následující údaje:
+Na počítači se přihlašte do webového rozhraní IP telefonu -> Admin login (vpravo nahoře) -> Ext1 a vyplnit následující údaje:
 
 | Klíč     | Hodnota                                  |
 | -------- | ---------------------------------------- |
