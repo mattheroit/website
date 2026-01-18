@@ -7,18 +7,18 @@ export default defineConfig({
   srcDir: "src",
   lang: "cs-CZ",
 
-  title: "HOO",
+  title: "mattheroit.com",
   //description: "description",
   head: [
     ["link", { rel: "icon", href: "/logo_dark.svg", id: "favicon" }],
     ["script", { src: "/scripts/favicon_switcher.js" }],
-    ["meta", { property: "og:site_name", content: "Hlavní otevírač oken" }],
+    ["meta", { property: "og:site_name", content: "mattheroit.com" }],
     ["meta", { property: "og:locale", content: "cs-CZ" }]
   ],
 
   themeConfig: {
     logo: { light: "/logo_dark.svg", dark: "/logo_light.svg" },
-    siteTitle: "HOO",
+    siteTitle: "mattheroit.com",
 
     // https://vitepress.dev/reference/default-theme-config
     // nav: [],
@@ -29,10 +29,10 @@ export default defineConfig({
 
     aside: true,
     outline: { level: [2, 3], label: "Na této stránce" },
-    socialLinks: [{ icon: "github", link: "https://github.com/mattheroit/hlavni-otevirac-oken" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/mattheroit/website" }],
     // footer: {},
     editLink: {
-      pattern: "https://github.com/mattheroit/hlavni-otevirac-oken/edit/main/src/:path",
+      pattern: "https://github.com/mattheroit/website/edit/main/src/:path",
       text: "Upravit na GitHubu"
     },
     lastUpdated: {
