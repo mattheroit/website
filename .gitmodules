@@ -1,0 +1,3 @@
+[submodule "acoustic_levitator_mk1"]
+	path = src/projects/acoustic_levitator_mk1
+	url = https://github.com/mattheroit/acoustic_levitator_mk1.git
