@@ -3,12 +3,16 @@ import { Labels } from "./i18n-labels"
 
 export function createThemeConfig(labels: Labels): LocaleSpecificConfig {
   return {
-    themeConfig: {
-      head: [
-        ["meta", { property: "og:site_name", content: "mattheroit.com" }],
-        ["meta", { property: "og:locale", content: labels.lang }]
-      ],
+    head: [
+      ["meta", { property: "og:type", content: "website" }],
+      ["meta", { property: "og:url", content: "https://mattheroit.com/" }],
+      ["meta", { property: "og:site_name", content: "mattheroit.com" }],
+      ["meta", { property: "og:locale", content: labels.lang as string }]
+    ],
 
+    title: "mattheroit.com",
+
+    themeConfig: {
       logo: { light: "/logo_dark.svg", dark: "/logo_light.svg" },
       siteTitle: "mattheroit.com",
       lang: labels.lang,

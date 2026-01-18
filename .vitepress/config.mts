@@ -9,8 +9,6 @@ export default defineConfig({
   cleanUrls: true,
   srcDir: "src",
 
-  title: "mattheroit.com",
-
   locales: {
     root: { label: "Čeština", lang: "cs-CZ", link: "/cs/", dir: "ltr", ...createThemeConfig(csConfig) },
     en: { label: "English", lang: "en-US", link: "/en/", dir: "ltr", ...createThemeConfig(enConfig) }
