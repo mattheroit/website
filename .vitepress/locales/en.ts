@@ -12,6 +12,8 @@ export const enConfig: Labels = {
 
 function sidebar(): DefaultTheme.Sidebar {
   return {
-    "/en/asterisk/": [{ text: "Asterisk", base: "/en/asterisk/", items: [{ text: "Instalation and basic configuration", link: "/" }] }]
+    "/en/asterisk/": [
+      { text: "Asterisk", base: "/en/asterisk/", items: [{ text: "Instalation and basic configuration", link: "instalation_and_configuration" }] }
+    ]
   }
 }

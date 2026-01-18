@@ -51,6 +51,8 @@ export const csConfig: Labels = {
 
 function sidebar(): DefaultTheme.Sidebar {
   return {
-    "/cs/asterisk/": [{ text: "Asterisk", base: "/cs/asterisk/", items: [{ text: "Instalace a základní konfigurace", link: "/" }] }]
+    "/cs/asterisk/": [
+      { text: "Asterisk", base: "/cs/asterisk/", items: [{ text: "Instalace a základní konfigurace", link: "instalation_and_configuration" }] }
+    ]
   }
 }
