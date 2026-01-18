@@ -1,3 +1,5 @@
-# Hlavní otevírač oken
+# mattheroit.com
 
-Otevírám okna.
+Zdrojový repozitář pro [stránku][link]
+
+[link]: https://mattheroit.com/
