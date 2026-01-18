@@ -13,6 +13,7 @@ export function createThemeConfig(labels: Labels): LocaleSpecificConfig {
     ],
 
     title: "mattheroit.com",
+    description: labels.siteDescription as string,
 
     themeConfig: {
       logo: { light: "/logo_dark.svg", dark: "/logo_light.svg" },

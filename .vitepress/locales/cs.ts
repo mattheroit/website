@@ -3,6 +3,7 @@ import { Labels } from "../i18n-labels"
 
 export const csConfig: Labels = {
   lang: "cs-CZ",
+  siteDescription: "Zabava pro celou rodinu fr fr",
 
   sidebarMenuLabel: "Menu",
   sidebar: sidebar(),

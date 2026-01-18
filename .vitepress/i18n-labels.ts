@@ -3,6 +3,7 @@ import { DefaultTheme } from "vitepress"
 // .vitepress/i18n.ts
 export interface Labels {
   lang: String
+  siteDescription: String
   nav?: DefaultTheme.NavItem[]
   sidebarMenuLabel?: String
   sidebar?: DefaultTheme.Sidebar

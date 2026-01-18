@@ -3,6 +3,7 @@ import { Labels } from "../i18n-labels"
 
 export const enConfig: Labels = {
   lang: "en-US",
+  siteDescription: "Fun the whole family can enjoy fr fr",
 
   // https://vitepress.dev/reference/default-theme-config
   // nav:
