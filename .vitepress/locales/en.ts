@@ -6,11 +6,12 @@ export const enConfig: Labels = {
 
   // https://vitepress.dev/reference/default-theme-config
   // nav:
-  sidebar: sidebar()
+  sidebar: sidebar(),
+  footer: { copyright: "Copyright © 2026 mattheroit" }
 }
 
 function sidebar(): DefaultTheme.Sidebar {
   return {
-    "/asterisk/": [{ text: "Asterisk" }]
+    "/en/asterisk/": [{ text: "Asterisk", base: "/en/asterisk/", items: [{ text: "Instalation and basic configuration", link: "/" }] }]
   }
 }

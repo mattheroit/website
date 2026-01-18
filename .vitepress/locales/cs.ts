@@ -4,8 +4,6 @@ import { Labels } from "../i18n-labels"
 export const csConfig: Labels = {
   lang: "cs-CZ",
 
-  // https://vitepress.dev/reference/default-theme-config
-  // nav:
   sidebarMenuLabel: "Menu",
   sidebar: sidebar(),
   outline: "Na této stránce",
@@ -34,7 +32,7 @@ export const csConfig: Labels = {
   },
 
   docFooter: { prev: "Předchozí", next: "Další" },
-  // footer: {},
+  footer: { copyright: "Copyright © 2026 mattheroit" },
   darkModeSwitchLabel: "Vzhled",
   darkModeSwitchTitle: "Přepnout na tmavý režim",
   lightModeSwitchTitle: "Přepnout na světlý režim",
@@ -53,6 +51,6 @@ export const csConfig: Labels = {
 
 function sidebar(): DefaultTheme.Sidebar {
   return {
-    "/asterisk/": [{ text: "Asterisk" }]
+    "/cs/asterisk/": [{ text: "Asterisk", base: "/cs/asterisk/", items: [{ text: "Instalace a základní konfigurace", link: "/" }] }]
   }
 }
