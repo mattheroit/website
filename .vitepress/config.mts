@@ -17,22 +17,20 @@ export default defineConfig({
   },
 
   rewrites(id) {
-    // 1. Match the pattern: projects/[name]/docs/[lang]/[file]
-    // The regex captures 'project-name' as $1, 'lang' as $2, and 'the-rest' as $3
-    const match = id.match(/^projects\/([^/]+)\/docs\/(en|cs)\/(.*)/)
-
-    if (match) {
-      const [_, project, lang, rest] = match
-
-      // 2. Return the new structure: [lang]/projects/[project]/[file]
-      // This turns 'projects/my-app/docs/en/intro.md' into 'en/projects/my-app/intro.md'
+    // Handle Project Submodules
+    // Format: projects/name/docs/lang/file.md -> lang/projects/name/file.md
+    const projectMatch = id.match(/^projects\/([^/]+)\/docs\/(en|cs)\/(.*)/)
+    if (projectMatch) {
+      const [_, project, lang, rest] = projectMatch
       return `${lang}/projects/${project}/${rest}`
     }
 
-    // 3. Fallback for files that are NOT in a project submodule
-    // If it's a bare file like 'src/about.md', move it to 'cs/about.md'
-    if (!id.startsWith("en/") && !id.startsWith("cs/") && !id.startsWith(".vitepress")) {
-      return `cs/${id}`
+    // Protect the root index.md, so that mattheroit.com doesn't resolve as not found
+    if (id === "index.md") return id
+
+    // If it's already in /cs/ or /en/, leave it alone
+    if (id.startsWith("cs/") || id.startsWith("en/")) {
+      return id
     }
 
     return id
