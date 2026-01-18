@@ -23,7 +23,7 @@ export function createThemeConfig(labels: Labels): LocaleSpecificConfig {
       outline: { level: [2, 3], label: labels.outline },
       socialLinks: [{ icon: "github", link: "https://github.com/mattheroit/website" }],
       editLink: {
-        pattern: "https://github.com/mattheroit/website/edit/main/src/:path",
+        pattern: "/edit-site-proxy.html?path=:path",
         text: labels.editLink
       },
       lastUpdated: {
