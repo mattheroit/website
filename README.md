@@ -2,8 +2,7 @@
 
 Zdrojový repozitář pro [web][link]
 
-> [!CAUTION] STRUKTURA PROJEKTU
->
+> [!CAUTION]
 > pridavana slozka se musi jmenovat `docs` a musi byt ulozena v rootu repozitare.
 > Musi obsahovat slozky `cs` a `en`, ve kterych bude obsah pro stranku, slozka `assets` je optional
 
