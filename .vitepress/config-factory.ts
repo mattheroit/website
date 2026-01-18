@@ -7,7 +7,9 @@ export function createThemeConfig(labels: Labels): LocaleSpecificConfig {
       ["meta", { property: "og:type", content: "website" }],
       ["meta", { property: "og:url", content: "https://mattheroit.com/" }],
       ["meta", { property: "og:site_name", content: "mattheroit.com" }],
-      ["meta", { property: "og:locale", content: labels.lang as string }]
+      ["meta", { property: "og:locale", content: labels.lang as string }],
+      ["link", { rel: "icon", href: "/logo_dark.svg", id: "favicon" }],
+      ["script", { src: "/scripts/favicon_switcher.js" }]
     ],
 
     title: "mattheroit.com",
