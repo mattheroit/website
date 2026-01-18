@@ -1,14 +1,12 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
-layout: home
-
-hero:
-  name: " "
-  #text: text
-  #tagline: tagline
-
-features:
-  - title: Asterisk
-    details: "Basic setup"
-    link: /asterisk/
+layout: false
 ---
+
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => {
+  const saved = localStorage.getItem('user-language')
+  // Redirect to saved lang, or default to /cs/
+  window.location.replace(saved === 'en' ? '/en/' : '/cs/')
+})
+</script>
