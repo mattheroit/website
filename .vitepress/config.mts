@@ -15,20 +15,16 @@ export default defineConfig({
   },
 
   rewrites(id) {
-    // Handle Project Submodules
-    // Format: projects/name/docs/lang/file.md -> lang/projects/name/file.md
+    // If it's already in /cs/ or /en/, leave it alone
+    if (id.startsWith("cs/") || id.startsWith("en/")) {
+      return id
+    }
+
+    // Format: projects/name/docs/en/file.md -> en/projects/name/file.md
     const projectMatch = id.match(/^projects\/([^/]+)\/docs\/(en|cs)\/(.*)/)
     if (projectMatch) {
       const [_, project, lang, rest] = projectMatch
       return `${lang}/projects/${project}/${rest}`
-    }
-
-    // Protect the root index.md, so that mattheroit.com doesn't resolve as not found
-    if (id === "index.md") return id
-
-    // If it's already in /cs/ or /en/, leave it alone
-    if (id.startsWith("cs/") || id.startsWith("en/")) {
-      return id
     }
 
     return id
