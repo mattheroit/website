@@ -4,7 +4,7 @@ Zdrojový repozitář pro [web][link]
 
 > [!CAUTION]
 > pridavana slozka se musi jmenovat `docs` a musi byt ulozena v rootu repozitare.
-> Musi obsahovat slozky `cs` a `en`, ve kterych bude obsah pro stranku, slozka `assets` je optional
+> Musi obsahovat slozky `cs` a `en`, ve kterych bude obsah pro stranku, slozka `public` je urcena pro assety (fotky, videa atd.) (optional)
 
 **Jak přidat projekt**: _(Protože to určitě zapomenu)_
 
